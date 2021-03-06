@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { MobileNavComponent } from './mobile-nav.component';
 
@@ -6,7 +6,7 @@ describe('MobileNavComponent', () => {
   let component: MobileNavComponent;
   let fixture: ComponentFixture<MobileNavComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       declarations: [ MobileNavComponent ]
     })

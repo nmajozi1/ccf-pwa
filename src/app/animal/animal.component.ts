@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { Store } from '@ngrx/store';
+import { SelectAnimal } from '../state';
 
 @Component({
   selector: 'app-animal',
@@ -8,12 +10,14 @@ import { Router } from '@angular/router';
 })
 export class AnimalComponent implements OnInit {
 
-  constructor(private router: Router) { }
+  constructor(private store: Store, private router: Router) { }
 
   ngOnInit() {
+
   }
 
-  goToIncident(): void {
+  goToIncident(animal: string): void {
+    this.store.dispatch(new SelectAnimal(animal));
     this.router.navigate(['incident']);
   }
 

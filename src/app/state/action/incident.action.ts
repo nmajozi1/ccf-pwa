@@ -1,6 +1,6 @@
 import { Action } from '@ngrx/store';
-export const INCIDENT_TYPE = 'Login User';
-export const INCIDENT_TYPE_COMPLETE = 'Registration Complete';
+export const INCIDENT_TYPE = 'Incident Type';
+export const INCIDENT_TYPE_COMPLETE = 'Incident Complete';
 
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Incident Type ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

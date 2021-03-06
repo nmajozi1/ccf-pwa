@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { SideHeaderComponent } from './side-header.component';
 
@@ -6,7 +6,7 @@ describe('SideHeaderComponent', () => {
   let component: SideHeaderComponent;
   let fixture: ComponentFixture<SideHeaderComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       declarations: [ SideHeaderComponent ]
     })
